@@ -11,6 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Galindo&family=Fredoka+One&family=Bubblegum+Sans&family=Chewy&family=Lilita+One&family=Righteous&display=swap" rel="stylesheet">
 
     <title>🎂 Sinh nhật Nhi Nho 💕</title>
+    <!-- Handle SPA redirect from 404.html -->
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
