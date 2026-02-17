@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/GFBD">
       <div className="relative min-h-screen">
         {/* Custom Cursor */}
         <CustomCursor />

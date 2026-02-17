@@ -9,7 +9,7 @@ const MusicPlayer = () => {
   const audioRef = useRef(null);
 
   // Happy Birthday instrumental music (loop enabled)
-  const audioSrc = '/music/happy-birthday.mp3';
+  const audioSrc = import.meta.env.BASE_URL + 'music/happy-birthday.mp3';
 
   // Start music on first user interaction
   const startMusic = async () => {
